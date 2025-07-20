@@ -1,0 +1,107 @@
+/* Reset and base styles */
+body {
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Footer background and spacing */
+.footer {
+  background-color: #64988F;
+  padding: 40px 20px 60px;
+  color: #333;
+}
+
+/* Layout for 3 columns */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0px 20px;
+}
+
+/* Subscribe Section */
+.subscribe {
+  max-width: 300px;
+}
+
+.subscribe-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  margin: 0;
+  white-space: nowrap;
+  padding: 20px 20px 40px;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 10px;
+  padding: 0px 20px 30px;
+  margin-top: -10px;
+}
+
+.subscribe-form input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 180px;
+}
+
+.subscribe-form button {
+  background-color: #D86F45;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/*styles for middle and right columns */
+.footer-column {
+  min-width: 150px;
+}
+.column-title{
+  font-size: 14px;
+}
+
+.footer-column ul {
+  list-style: none; 
+  padding: 0;
+  margin-top: 10px;
+}
+
+.footer-column li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Divider line */
+.footer-line {
+  width: 1000px;
+  margin: 30px auto 10px;
+  border: none;
+  height: 1px;
+  background-color: #c8792a;
+}
+
+/* Footer Logo */
+.footer-logo {
+  max-width: 1000px;
+  padding: 20px 30px;
+  text-align: center;
+  margin-left: -110px; 
+  color: #fff;
+  font-size: 18px;
+  
+}
+/* Logo font styling */
+.footer-logo-img {
+  height: 20px;         
+  width: auto;          
+  text-align: center;    
+  padding-left: 20px;   
+}
