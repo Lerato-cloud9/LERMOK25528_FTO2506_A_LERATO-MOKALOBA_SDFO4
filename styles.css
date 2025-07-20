@@ -15,6 +15,7 @@ body {
 .footer-container {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
   align-items: center;
   flex-wrap: wrap;
   max-width: 1000px;
@@ -24,7 +25,9 @@ body {
 
 /* Subscribe Section */
 .subscribe {
-  max-width: 300px;
+  flex: 1 1 250px;     /* grow and shrink with min width 250px */
+  min-width: 200px;    /* don't get too narrow */
+  max-width: 400px;
 }
 
 .subscribe-title {
@@ -38,7 +41,7 @@ body {
 
 .subscribe-form {
   display: flex;
-  gap: 10px;
+  gap: 15px;
   padding: 0px 20px 30px;
   margin-top: -10px;
 }
@@ -47,7 +50,8 @@ body {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  width: 180px;
+  width: 150px;
+  min-width: 0;
 }
 
 .subscribe-form button {
@@ -62,6 +66,9 @@ body {
 /*styles for middle and right columns */
 .footer-column {
   min-width: 150px;
+  max-width: 100%;   
+  min-width: auto;   
+  margin-bottom: 20px;
 }
 .column-title{
   font-size: 14px;
@@ -91,11 +98,12 @@ body {
 /* Footer Logo */
 .footer-logo {
   max-width: 1000px;
-  padding: 20px 30px;
+  padding: 20px 0px;
   text-align: center;
-  margin-left: -110px; 
   color: #fff;
   font-size: 18px;
+  text-align: left;
+
   
 }
 /* Logo font styling */
@@ -104,4 +112,45 @@ body {
   width: auto;          
   text-align: center;    
   padding-left: 20px;   
+}
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .subscribe {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-column {
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-line {
+    width: 90%;
+  }
+}
+
+/* Responsive styles for very small screens */
+@media (max-width: 600px) {
+  .subscribe-form input {
+    width: 100%;
+  }
+
+  .footer-logo {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .column-title {
+    font-size: 12px;
+  }
+
+  .footer-column li {
+    font-size: 12px;
+  }
 }
