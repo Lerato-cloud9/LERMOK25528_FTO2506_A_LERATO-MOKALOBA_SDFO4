@@ -1,11 +1,61 @@
-# [SDF04] Challenge: HTML Responsive Footer 🖼️
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Footer Layout</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
 
-Welcome to your **HTML and CSS challenge!** This project is focused on applying all you've learned to design a fully responsive website footer.  
+  <!-- Footer Section -->
+  <footer class="footer">
 
+    <!-- Top Row: Subscribe, Quick Link, Technologies -->
+    <div class="footer-container">
+       
+      <!-- Column 1: Subscribe -->
+      <div class="subscribe">
 
-## 📖 Challenge Brief  
+        <p class="subscribe-title">Subscribe to our newsletter for updates.</p>
+        <form class="subscribe-form">
+          <input type="email" placeholder="Email Address" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
 
-All project instructions, requirements, and submission details can be found in the **challenge brief**.  
-Make sure to read it carefully before you start:  
+      <!-- Column 2: Quick Link -->
+      <div class="footer-column">
+        <p class="column-title"><strong>Quick Link</strong></p>
+        <ul>
+          <li>Home</li>
+          <li>Who We Are</li>
+          <li>Our Philosophy</li>
+        </ul>
+      </div>
 
-🔗 You will find the Challenge Brief in this repo in a markdown file called `CHALLENGE-BRIEF.MD`
+      <!-- Column 3: Technologies -->
+      <div class="footer-column">
+        <p class="column-title"><strong>Technologies</strong></p>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom Divider Line -->
+    <hr class="footer-line" />
+
+    <!-- Bottom Logo -->
+  <div class="footer-container">
+  <div class="footer-logo">
+    <img class="footer-logo-img" src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg" alt="CodeSpace Logo">
+  </div>
+
+  </footer>
+
+</body>
+</html>
