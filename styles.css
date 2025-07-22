@@ -108,8 +108,7 @@ body {
 .footer-logo-img {
   height: 20px;         
   width: auto;          
-  text-align: center;    
-  padding-left: 20px;   
+  
 }
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
