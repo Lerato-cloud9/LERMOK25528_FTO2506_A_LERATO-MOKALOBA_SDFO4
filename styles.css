@@ -65,7 +65,7 @@ body {
 /*styles for middle and right columns */
 .footer-column {
   max-width: 100%;   
-  min-width: auto;   
+  min-width: 150px;   
   margin-bottom: 20px;
 }
 .column-title{
